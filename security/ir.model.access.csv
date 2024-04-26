@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_my_product_order,my_product.order,model_my_product_order,base.group_user,1,1,1,1
+access_my_product_order_line,my_product.order.line,model_my_product_order_line,base.group_user,1,1,1,1
+access_my_product_vehicle,my_product.vehicle,model_my_product_vehicle,base.group_user,1,1,1,1
+access_my_product_route,my_product.route,model_my_product_route,base.group_user,1,1,1,1

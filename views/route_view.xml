@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="route_view_form" model="ir.ui.view">
+        <field name="name">my_product.route.form</field>
+        <field name="model">my_product.route</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="carrier_id"/>
+                        <field name="vehicle_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Orders">
+                            <field name="order_ids" mode="tree">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="total_weight"/>
+                                    <field name="total_volume"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    <group>
+                        <group>
+                            <field name="total_weight"/>
+                        </group>
+                        <group>
+                            <field name="total_volume"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

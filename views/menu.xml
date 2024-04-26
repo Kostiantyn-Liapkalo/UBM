@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <menuitem id="my_product_root" name="My Product" sequence="10"/>
+
+    <menuitem id="my_product_config" name="Configuration" parent="my_product_root" sequence="10"/>
+    <menuitem id="my_product_partner" name="Partners" parent="my_product_config" action="base.action_partner_form" sequence="10"/>
+    <menuitem id="my_product_products" name="Products" parent="my_product_config" action="product.product_normal_action" sequence="20"/>
+    <menuitem id="my_product_vehicles" name="Vehicles" parent="my_product_config" action="my_product.vehicle_action" sequence="30"/>
+
+    <menuitem id="my_product_orders" name="Orders" parent="my_product_root" sequence="20"/>
+    <!-- <menuitem id="my_product_order_lines" name="Order Lines" parent="my_product_orders" action="my_product.order_line_action" sequence="10"/> -->
+    <menuitem id="my_product_orders_menu" name="Orders" parent="my_product_orders" action="my_product.order_action" sequence="20"/>
+
+    <!-- <menuitem id="my_product_routes" name="Routes" parent="my_product_root" action="my_product.route_action" sequence="30"/> -->
+</odoo>
